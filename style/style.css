@@ -16,6 +16,10 @@
   list-style: none;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  /* background-color: var(--color-pink); */
+}
+
+body{
   background-color: var(--color-pink);
 }
 
