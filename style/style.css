@@ -6,6 +6,10 @@
   --color-gray: #cccccc;
   --color-pink: #D7BDCA;
   --color-dark-pink: #6A515E;
+  --color-green-blue: #00E0B9;
+  --color-green: #8BF188;
+  --color-yellow: #F9F871;
+  --color-dark-purple: #4D446A;
   --curve: 36;
 }
 
@@ -23,11 +27,11 @@ body{
   background-color: var(--color-pink);
 }
 
-input {
+/* input {
   position: absolute;
   opacity: 0;
   z-index: -1;
-}
+} */
 
 h1 {
   margin: 10px;
