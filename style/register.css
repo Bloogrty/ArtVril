@@ -1,0 +1,95 @@
+@import "style.css";
+
+body {
+    background-image: url('../public/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: var(--color-white); */
+}
+
+.register__login{
+
+    position: relative;
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    border: 1px solid var(--color-white);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.register__login h2{
+    position: relative;
+    text-align: center;
+    font-weight: 600px;
+    color: var(--color-dark-blue);
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.register__input-box{
+    position: relative;
+}
+
+.register__input-box input {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 20px;
+    color: var(--color-black);
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.register__input-box ::placeholder{
+    color: var(--color-dark-blue);
+}
+
+.register__input-box #login-btn {
+    position: relative;
+    border: none;
+    outline: none;
+    background: var(--color-blue);
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 1000px;
+    transition: 0.5s;
+}
+
+.register__input-box #login-btn:hover {
+    filter: brightness(130%);
+}
+
+.register__group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register__group a {
+    position: relative;
+    color: var(--color-dark-blue);
+    font-size: 18px;
+    font-weight: 600px;
+    text-decoration: none;
+}
+
+.register__group a:nth-child(2) {
+    text-decoration: underline;
+}
+
+.register__group a:hover {
+    filter: brightness(130%);
+}
