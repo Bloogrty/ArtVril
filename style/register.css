@@ -76,17 +76,18 @@ body {
 .register__group {
     display: flex;
     justify-content: space-between;
+    transition: 0.5s;
 }
 
 .register__group a {
     position: relative;
     color: var(--color-dark-blue);
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600px;
     text-decoration: none;
 }
 
-.register__group a:nth-child(2) {
+.register__group a:nth-child(2):hover {
     text-decoration: underline;
 }
 
