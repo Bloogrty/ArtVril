@@ -58,6 +58,10 @@ body {
     font-weight: 600;
 }
 
+.artwork__profile-user > p {
+    font-size: 24px;
+}
+
 .artwork__profile-user__follow {
     font-weight: 600px;
     padding: 16px 30px;
@@ -82,4 +86,38 @@ body {
     font-weight: 700;
     gap: 16px;
     font-size: 36px;
+}
+
+.artwork__detail{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-white);
+    margin: 0 16px;
+    font-size: 24px;
+    gap: 24px;
+}
+
+.artwork__detail-rate {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    font-size: 24px;
+}
+
+.artwork__detail-rate__content{
+    display: flex;
+    align-items: center;
+    color: var(--color-dark-gray);
+    cursor: pointer;
+}
+
+.artwork__detail-rate__content p {
+    /* height: 32px; */
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.artwork__detail-date {
+    color: var(--color-dark-gray);
 }
