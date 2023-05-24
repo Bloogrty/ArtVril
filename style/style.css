@@ -10,6 +10,7 @@
   --color-green: #8BF188;
   --color-yellow: #F9F871;
   --color-dark-purple: #4D446A;
+  --color-bg: #121212;
   --curve: 36;
 }
 
@@ -25,7 +26,7 @@
 }
 
 body{
-  background-color: var(--color-pink);
+  background-color: var(--color-bg);
 }
 
 /* input {
