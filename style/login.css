@@ -1,7 +1,8 @@
 @import "style.css";
 
-body {
-    background-image: url('../public/img/bg.jpg');
+
+body{
+    background-image: url('../public/img/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -9,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(3px);
     /* color: var(--color-white); */
 }
 
@@ -17,7 +19,7 @@ body {
     position: relative;
     padding: 60px;
     background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
     border: 1px solid var(--color-white);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.5);
