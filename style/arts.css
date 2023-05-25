@@ -2,7 +2,14 @@
 @import "navbar.css";
 
 body {
-    /* width: 100vh; */
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrap {
+    display: flex;
+    flex-direction: row;
+    height: auto;
 }
 
 .artwork {
@@ -10,6 +17,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 60%;
+    height: auto;
     padding: 24px;
     background-color: var(--color-dark-blue);
     margin: 24px auto;
@@ -121,3 +129,30 @@ body {
 .artwork__detail-date {
     color: var(--color-dark-gray);
 }
+
+.commission {
+    position: sticky;
+    top: 20px; /* Adjust this value as per your needs */
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 500px;
+    padding: 24px;
+    background-color: var(--color-dark-blue);
+    margin: 24px auto;
+    border-radius: 12px;
+    color: var(--color-white);
+  }
+
+  .commission__profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .commission__profile > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+  }
