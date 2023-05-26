@@ -58,6 +58,19 @@
     margin-top: 5px;
   }
 
-  .checbox__button {
+  .checkbox__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: 10px;
+    width: 144px;
+    padding: 10px 0;
+    /* margin: 0 auto; */
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-size: 16px;
+    cursor: pointer;
   }
