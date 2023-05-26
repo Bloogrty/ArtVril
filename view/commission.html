@@ -349,6 +349,25 @@
         cara apa pun. Jika terdapat kendala terhadap S&K ini, saya terbuka untuk
         berdiskusi sebelum Anda melakukan pembayaran.
       </p>
+      <form
+        action="form.html"
+        class="checkbox"
+        onsubmit="return validateForm()"
+      >
+        <label class="checkbox__label">
+          <input type="checkbox" name="agree" id="agree" />
+          <span> I agree with the terms and conditions </span>
+        </label>
+        <div class="checkbox__error" id="error"></div>
+        <br />
+
+        <input
+          class="checkbox__button"
+          type="submit"
+          value="submit
+        "
+        />
+      </form>
     </main>
 
     <script src="../script/index.js"></script>
