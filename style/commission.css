@@ -1,0 +1,20 @@
+@import "navbar.css";
+
+.commission-detail {
+    color: var(--color-white);
+    /* list-style-type: armenian; */
+    list-style: decimal;
+    padding: 200px;
+}
+
+.commission-detail__def li{
+    list-style: decimal;
+}
+
+.commission-detail__def-ul{
+    margin-left: 24px;
+}
+
+.commission-detail__def-ul li{
+    list-style: disc;
+}
