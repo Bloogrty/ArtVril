@@ -142,6 +142,7 @@ body {
     margin: 24px auto;
     border-radius: 12px;
     color: var(--color-white);
+    gap: 24px;
   }
 
   .commission__profile {
@@ -154,5 +155,39 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-
   }
+
+  .commission__porto{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .commission__porto-text {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-dark-gray);
+  }
+
+
+  .commission__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    text-decoration: none;
+    background-color: var(--color-blue);
+    padding: 24px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .commission__button a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: 600;
+  }  
+
+  .commission__button:hover {
+    filter: brightness(130%);
+  }
+

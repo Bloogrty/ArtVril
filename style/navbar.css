@@ -52,11 +52,17 @@
 }
 
 .header__item-work{
-    background-color: var(--color-green);
+    background-color: var(--color-green-blue);
     color: var(--color-white);
     font-weight: 600px;
     padding: 10px 20px;
     border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header__item-work:hover {
+    filter: brightness(130%);
 }
 
 .header__item-envelop {
