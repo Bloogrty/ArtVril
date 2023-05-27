@@ -11,12 +11,12 @@
 </head>
 <body>
 <main class="register">
-    <form action="index.html">
+    <form onsubmit="validateForm()" method="post" name="form-commission">
         <div class="register__login">
             <h2>Commission Form</h2>
             <div class="register__input-box">
                 <label> Title
-                    <input type="text" placeholder="Insert your title here..." required/>
+                    <input type="text" name="title" placeholder="Insert your title here..." required/>
                 </label>
             </div>
             <label for="description-textarea">Description</label><textarea name="description"
