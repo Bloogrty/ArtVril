@@ -31,3 +31,22 @@
     border-radius: 50%;
 }
 
+.profile-user__post {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0 auto;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.profile-user__post img {
+    width: 275px;
+    height: 275px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.profile-user__post img:hover{
+    transform: translateY(-10px);
+}
