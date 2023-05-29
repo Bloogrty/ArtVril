@@ -1,85 +1,71 @@
 @import "style.css";
 @import "navbar.css";
+@import "footer.css";
 
-body {
-    /* width: 100vh; */
-}
-
-.artwork {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 60%;
-    padding: 24px;
-    background-color: var(--color-dark-blue);
-    margin: 24px auto;
-    border-radius: 12px;
-    /* margin-left: 100px; */
-}
-
-.artwork__img {
+.carousel h1 {
     display: flex;
     justify-content: center;
-    position: relative;
-    width: 90%;
-    height: auto;
+    align-items: center;
+    margin-top: 32px;
 }
 
-.artwork__img img {
-    position: relative;
-    max-width: 80%;
-    height: 100%;
+.container{
+    max-width:800px;
+    margin:30px auto;
+  
+  }
+
+.carousel img {
+    width: 500px;
+    height: 333px;
     object-fit: cover;
 }
-
-.artwork__profile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 16px 16px;
-    color: var(--color-white);
-}
-
-.artwork__profile-user{
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-}
-
-.artwork__profile-user img {
-    width: 50px;
-    height: 50px;
+  
+  .slideshow-container{
+      width: 500px;
+      margin: 0 auto;
+  }
+  
+      /* Caption text */
+  .text {
+    color: #FFF;
+    font-size: 22px;
+    position: absolute;
+    width: 500px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -50px;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot{
+  
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #bbb;
     border-radius: 50%;
-}
-
-.artwork__profile-user p {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-}
-
-.artwork__profile-user__follow {
-    font-weight: 600px;
-    padding: 16px 30px;
-    border-radius: 36px;
-    background-color: var(--color-blue);
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.artwork__profile-user__follow p {
-    display: flex;
-    align-items: center;
-}
-
-.artwork__profile-user__follow:hover {
-    filter: brightness(130%);
-}
-
-.artwork__content{
-    display: flex;
-    flex-direction: row;
-    font-weight: 700;
-    gap: 16px;
-    font-size: 36px;
-}
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
