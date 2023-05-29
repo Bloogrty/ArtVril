@@ -9,7 +9,7 @@ footer {
     flex-direction: column;
 
     color: white;
-    padding: 32px;
+    padding: 64px;
 }
 
 .footer__bar-1 {
@@ -82,5 +82,5 @@ footer {
 
 .footer__bar-3 {
     position: relative;
-    margin: 32px auto;
+    margin: 32px auto 0;
 }
