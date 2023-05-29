@@ -1,17 +1,18 @@
 @import "navbar.css";
+@import "footer.css";
 
 .profile-user {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--color-white);
+    color: var(--color-dark-font);
     width: 80%;
     margin: 0 auto;
     gap: 32px;
     padding: 32px 16px;
     margin-top: 64px;
     border-radius: 32px;
-    background-color: var(--color-dark-purple);
+    background-color: var(--color-chocolate);
 }
 
 .profile-user__header {
