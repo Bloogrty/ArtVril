@@ -1,5 +1,6 @@
 @import "style.css";
 @import "navbar.css";
+@import "footer.css";
 
 body {
     margin: 0;
@@ -19,7 +20,7 @@ body {
     width: 60%;
     height: auto;
     padding: 24px;
-    background-color: var(--color-dark-blue);
+    background-color: var(--color-chocolate);
     margin: 24px auto;
     border-radius: 12px;
     /* margin-left: 100px; */
@@ -42,18 +43,18 @@ body {
 
 .commission {
     position: sticky;
-    top: 20px; /* Adjust this value as per your needs */
+    top: 20px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
-    width: 25%;
+    width: 400px;
     height: 500px;
     padding: 24px;
-    background-color: var(--color-dark-blue);
+    background-color: var(--color-chocolate);
     margin: 24px auto;
     border-radius: 12px;
-    color: var(--color-white);
+    color: var(--color-);
     gap: 24px;
     overflow-x: hidden;
   }
@@ -79,7 +80,7 @@ body {
   .commission__porto-text {
     display: flex;
     justify-content: space-between;
-    color: var(--color-dark-gray);
+    color: var(--color-dark-font);
   }
 
   .commission__porto-img {
@@ -123,10 +124,11 @@ body {
 .artist-profile {
     display: flex;
     flex-direction: column;
+    width: 92%;
+    margin: 0 auto;
     padding: 32px;
     border-radius: 8px;
-    background-color: var(--color-blue);
-    color: black;
+    background-color: var(--color-chocolate);
 }
 
   .artwork__profile {
@@ -134,7 +136,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 64px 16px;
-    color: var(--color-white);
+    color: var(--color-dark-font);
 
 }
 
@@ -165,6 +167,7 @@ body {
     padding: 16px 30px;
     border-radius: 36px;
     background-color: var(--color-blue);
+    color: var(--color-white);
     cursor: pointer;
     transition: 0.5s;
 }
@@ -189,7 +192,7 @@ body {
 .artwork__detail{
     display: flex;
     flex-direction: column;
-    color: var(--color-white);
+    color: var(--color-dark-font);
     margin: 0 16px;
     font-size: 24px;
     gap: 24px;
@@ -205,7 +208,7 @@ body {
 .artwork__detail-rate__content{
     display: flex;
     align-items: center;
-    color: var(--color-dark-gray);
+    color: var(--color-font);
     cursor: pointer;
 }
 
@@ -217,7 +220,7 @@ body {
 }
 
 .artwork__detail-date {
-    color: var(--color-dark-gray);
+    color: var(--color-font);
 }
 
 

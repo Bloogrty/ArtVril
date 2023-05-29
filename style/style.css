@@ -12,8 +12,11 @@
   --color-yellow: #F9F871;
   --color-dark-purple: #4D446A;
   --color-bg: #fff8ee;
-  --color-dark-chocholate: #c58f69;
-  --color-chocholate: #f8e3c9;
+  --color-dark-chocolate: #c58f69;
+  --color-chocolate: #f8e3c9;
+  --color-font: #B6A999;
+  --color-dark-font: #685D4E;
+  --color-button: #00917B;
 
   --curve: 36;
 }
@@ -31,4 +34,3 @@
 body{
   background-color: var(--color-bg);
 }
-

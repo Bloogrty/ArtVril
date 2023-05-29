@@ -7,9 +7,9 @@ footer {
     background-color: black;
     display: flex;
     flex-direction: column;
-
     color: white;
     padding: 64px;
+    margin-top: 64px;
 }
 
 .footer__bar-1 {
