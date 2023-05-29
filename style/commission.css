@@ -1,4 +1,5 @@
 @import "navbar.css";
+@import "footer.css";
 
 .commission-detail {
     display: flex;
@@ -64,26 +65,22 @@
     align-items: center;
     text-align: center;
     margin-top: 10px;
-    width: 144px;
+    width: 100%;
     padding: 10px 0;
     /* margin: 0 auto; */
     border: none;
     border-radius: 5px;
     background-color: var(--color-blue);
     color: var(--color-white);
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 600;
     cursor: pointer;
+    transition: 0.5s;
   }
 
-
-  /* ////////////////////////// */
-
-  /* body {
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  } */
+.checkbox__button:hover {
+    filter: brightness(130%);
+  }
 
   .commission-detail {
     background-color: #fff;
@@ -95,13 +92,13 @@
   }
 
 .commission-detail  h2 {
-    color: #333;
+    color: var(--color-dark-font);
     font-size: 24px;
     margin-bottom: 10px;
   }
 
   .commission-detail span {
-    color: #666;
+    color: var(--color-font);
     display: block;
     margin-bottom: 20px;
   }
@@ -111,13 +108,13 @@
   }
 
   .commission-detail__def h3 {
-    color: #333;
+    color: var(--color-dark-font);
     font-size: 18px;
     margin-bottom: 10px;
   }
 
   .commission-detail__def li {
-    color: #666;
+    color: var(--color-font);
     font-size: 14px;
     margin-bottom: 5px;
   }
@@ -127,13 +124,17 @@
   }
 
   .commission-detail__def-ul h4 {
-    color: #333;
+    color: var(--color-dark-font);
     font-size: 16px;
     margin-bottom: 5px;
   }
 
   .commission-detail__def-ul li {
-    color: #666;
+    color: var(--color-font);
     font-size: 14px;
     margin-bottom: 5px;
+  }
+
+  .commission-detail p {
+    color: var(--color-dark-font);
   }
