@@ -40,12 +40,102 @@ body {
     object-fit: cover;
 }
 
-.artwork__profile {
+.commission {
+    position: sticky;
+    top: 20px; /* Adjust this value as per your needs */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 25%;
+    height: 500px;
+    padding: 24px;
+    background-color: var(--color-dark-blue);
+    margin: 24px auto;
+    border-radius: 12px;
+    color: var(--color-white);
+    gap: 24px;
+    overflow-x: hidden;
+  }
+
+  .commission__profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .commission__profile > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .commission__porto{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .commission__porto-text {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-dark-gray);
+  }
+
+  .commission__porto-img {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    cursor: pointer;
+  }
+
+  .commission__porto-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    /* margin-right: 12px; */
+  }
+
+  .commission__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    text-decoration: none;
+    background-color: var(--color-blue);
+    padding: 24px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .commission__button a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: 600;
+  }  
+
+  .commission__button:hover {
+    filter: brightness(130%);
+  }
+
+
+
+.artist-profile {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: var(--color-blue);
+    color: black;
+}
+
+  .artwork__profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 64px 16px;
     color: var(--color-white);
+
 }
 
 .artwork__profile-user{
@@ -130,81 +220,4 @@ body {
     color: var(--color-dark-gray);
 }
 
-.commission {
-    position: sticky;
-    top: 20px; /* Adjust this value as per your needs */
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    flex-direction: column;
-    width: 25%;
-    height: 500px;
-    padding: 24px;
-    background-color: var(--color-dark-blue);
-    margin: 24px auto;
-    border-radius: 12px;
-    color: var(--color-white);
-    gap: 24px;
-    overflow-x: hidden;
-  }
-
-  .commission__profile {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  
-  .commission__profile > img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-
-  .commission__porto{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .commission__porto-text {
-    display: flex;
-    justify-content: space-between;
-    color: var(--color-dark-gray);
-  }
-
-  .commission__porto-img {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    cursor: pointer;
-  }
-
-  .commission__porto-img img {
-    width: 100px;
-    height: 100px;
-    border-radius: 12px;
-    /* margin-right: 12px; */
-  }
-
-  .commission__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 32px;
-    text-decoration: none;
-    background-color: var(--color-blue);
-    padding: 24px;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-
-  .commission__button a {
-    text-decoration: none;
-    color: var(--color-white);
-    font-weight: 600;
-  }  
-
-  .commission__button:hover {
-    filter: brightness(130%);
-  }
 
