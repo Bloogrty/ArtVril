@@ -6,18 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="../style/style.css">
   <link rel="stylesheet" href="../style/form-commission.css"/>
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-          integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script src="../script/form-commission.js"></script>
   <title>Commission Form</title>
 </head>
 <body>
-<!--navbar-->
-<nav>
-  <script>
-      loadNavbar()
-  </script>
-</nav>
+<!--header-->
+<header class="header">
+  <div class="header__left">
+    <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
+    <div class="header__logo">
+      <img src="../public/img/logo-ArtVril.png" alt="" />
+    </div>
+    <h1>ArtVril</h1>
+  </div>
+  <div class="header__right">
+    <div class="header__search">
+      <input type="text" placeholder="Search Images" />
+      <button type="submit">Search</button>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item-work">Upload Your Work</li>
+        <li class="header__item-envelop">&#9993;</li>
+        <li class="header__item-profile">
+          <img src="../public/img/avril.jpg" alt="user-profile" />
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 <main>
 </main>
 </body>
