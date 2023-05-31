@@ -39,23 +39,47 @@
   <div id="form__background">
     <div class="form__header-title">ArtVril Commission Form</div>
     <form action="">
-      <div class="form__full-width-title">
+      <div class="form__input-title">
         <label for="full-name">Full Name</label>
       </div>
       <div class="form__full-width-input">
         <input type="text" name="full-name" id="full-name" placeholder="Full Name">
       </div>
-      <div class="form__full-width-title">
+      <div class="form__input-title">
         <label for="email">Email</label>
       </div>
       <div class="form__full-width-input">
         <input type="email" name="email" id="email">
       </div>
-      <div class="form__full-width-title">
+      <div class="form__input-title">
         <label for="contact-number">Contact Number</label>
       </div>
       <div class="form__full-width-input">
         <input type="text" name="contact-number" id="contact-number" placeholder="08xx xxxx xxxx">
+      </div>
+      <div class="form__half-width">
+        <div class="form__half-width-column">
+          <div class="form__input-title">
+            <label for="contact-number">This artwork is for</label>
+          </div>
+          <select name="artwork" id="artwork">
+            <option value="Personal">Personal</option>
+            <option value="Business">Business</option>
+            <option value="Gift">Gift</option>
+          </select>
+        </div>
+
+        <div class="form__half-width-column">
+          <div class="form__input-title">
+            <label for="finish-date">I require this work finished by</label>
+          </div>
+          <select name="finish-date" id="finish-date">
+            <option value="Flexible">Flexible</option>
+            <option value="1-4 Weeks">1-4 Weeks</option>
+            <option value="4-8 Weeks">4-8 Weeks</option>
+          </select>
+        </div>
+
       </div>
     </form>
   </div>

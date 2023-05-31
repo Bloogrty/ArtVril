@@ -28,11 +28,24 @@ input {
     padding: 0.5vw;
 }
 
-.form__full-width-title {
+.form__input-title {
     margin-bottom: 1vh;
 }
 
 .form__full-width-input input {
     width: 40vw;
     margin-bottom: 1vh;
+}
+
+.form__half-width {
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    border-color: var(--color-gray);
+    background-color: var(--color-white);
+    border-radius: 3px;
+    border-style: solid;
+    padding: 0.5vw;
 }
