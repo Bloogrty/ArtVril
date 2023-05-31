@@ -20,3 +20,18 @@ main {
     font-weight: bold;
     margin-bottom: 3vh;
 }
+
+input {
+    border-color: var(--color-gray);
+    border-radius: 3px;
+    border-style: solid;
+    padding: 0.5vw;
+}
+
+.form__full-width-title {
+    margin-bottom: 1vh;
+}
+
+.form__full-width-input input {
+    width: 40vw;
+}
