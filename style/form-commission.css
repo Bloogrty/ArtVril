@@ -34,4 +34,5 @@ input {
 
 .form__full-width-input input {
     width: 40vw;
+    margin-bottom: 1vh;
 }
