@@ -21,7 +21,7 @@ main {
     margin-bottom: 3vh;
 }
 
-input {
+input, textarea {
     border-color: var(--color-gray);
     border-radius: 3px;
     border-style: solid;
@@ -37,9 +37,15 @@ input {
     margin-bottom: 1vh;
 }
 
+textarea {
+    width: 40vw;
+    margin-bottom: 1vh;
+}
+
 .form__half-width {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1vh;
 }
 
 select {
