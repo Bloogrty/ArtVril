@@ -1,16 +1,22 @@
-/*input[type=file]::file-selector-button {*/
-/*    margin-right: 20px;*/
-/*    border: none;*/
-/*    background: #084cdf;*/
-/*    padding: 10px 20px;*/
-/*    border-radius: 10px;*/
-/*    color: white;*/
-/*    cursor: pointer;*/
-/*    transition: background .2s ease-in-out;*/
-/*}*/
-
-/*input[type=file]::file-selector-button:hover {*/
-/*    background: #0d45a5;*/
-/*}*/
-
 @import "navbar.css";
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#form__background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    width: 50vw;
+    padding: 1vw;
+}
+
+.form__header-title {
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
