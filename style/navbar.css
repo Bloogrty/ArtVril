@@ -29,7 +29,7 @@
     margin-right: 20px;
 }
 
-.header__logo > img {
+.header__logo > a > img {
     height: 80px;
 }
 
@@ -114,7 +114,7 @@
     top: 0;
     transition: transform 0.3s ease;
     transform: translateX(-100%);
-    z-index: 1;
+    z-index: 3;
     padding: 16px 0px;
 }
 
@@ -148,7 +148,7 @@
     padding: 0 16px;
 }
 
-.sidebar__top > img {
+.sidebar__top > a > img {
     width: 80px;
 }
 
