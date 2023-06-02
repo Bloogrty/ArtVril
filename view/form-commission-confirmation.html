@@ -1,101 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="../style/style.css">
-  <link rel="stylesheet" href="../style/form-commission.css"/>
-  <script src="../script/form-commission.js"></script>
-  <title>Commission Form</title>
-</head>
-<body>
-<!--header-->
-<header class="header">
-  <div class="header__left">
-    <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
-    <div class="header__logo">
-      <img src="../public/img/logo-ArtVril.png" alt=""/>
-    </div>
-    <h1>ArtVril</h1>
-  </div>
-  <div class="header__right">
-    <div class="header__search">
-      <input type="text" placeholder="Search Images"/>
-      <button type="submit">Search</button>
-    </div>
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li class="header__item-work">Upload Your Work</li>
-        <li class="header__item-envelop">&#9993;</li>
-        <li class="header__item-profile">
-          <img src="../public/img/avril.jpg" alt="user-profile"/>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<main>
-  <div id="form__background">
-    <div class="form__header-title">ArtVril Commission Form</div>
-    <form action="">
-      <div class="form__input-title">
-        <label for="full-name">Full Name</label>
-      </div>
-      <div class="form__full-width-input">
-        <input type="text" name="full-name" id="full-name" placeholder="Full Name">
-      </div>
-
-      <div class="form__input-title">
-        <label for="email">Email</label>
-      </div>
-      <div class="form__full-width-input">
-        <input type="email" name="email" id="email">
-      </div>
-
-      <div class="form__input-title">
-        <label for="contact-number">Contact Number</label>
-      </div>
-      <div class="form__full-width-input">
-        <input type="text" name="contact-number" id="contact-number" placeholder="08xx xxxx xxxx">
-      </div>
-
-      <div class="form__half-width">
-        <div class="form__half-width-column">
-          <div class="form__input-title">
-            <label for="contact-number">This artwork is for</label>
-          </div>
-          <select name="artwork" id="artwork">
-            <option value="Personal">Personal</option>
-            <option value="Business">Business</option>
-            <option value="Gift">Gift</option>
-          </select>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/form-commission.css" />
+    <script src="../script/form-commission.js"></script>
+    <title>Commission Form</title>
+  </head>
+  <body>
+    <!--header-->
+    <header class="header">
+      <div class="header__left">
+        <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="../public/img/logo-ArtVril.png" alt="" />
+          </a>
         </div>
-
-        <div class="form__half-width-column">
-          <div class="form__input-title">
-            <label for="finish-date">I require this work finished by</label>
-          </div>
-          <select name="finish-date" id="finish-date">
-            <option value="Flexible">Flexible</option>
-            <option value="1-4 Weeks">1-4 Weeks</option>
-            <option value="4-8 Weeks">4-8 Weeks</option>
-          </select>
+        <h1>ArtVril</h1>
+      </div>
+      <div class="header__right">
+        <div class="header__search">
+          <input type="text" placeholder="Search Images" />
+          <a href="search.html">Search</a>
+          <!-- <button type="submit">Search</button>  -->
         </div>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item-work">
+              <a href="form-upload.html"> Upload Your Work </a>
+            </li>
+            <li class="header__item-envelop">
+              <a href="chat.html">&#9993; </a>
+            </li>
+            <li class="header__item-profile">
+              <a href="user-profile.html">
+                <img src="../public/img/avril.jpg" alt="user-profile" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <div class="sidebar">
+      <div class="sidebar__top">
+        <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
+        <a href="index.html">
+          <img src="../public/img/logo-ArtVril.png" alt="" />
+        </a>
       </div>
+      <div class="sidebar__menu-list">
+        <ul class="sidebar__menu">
+          <h3>Home</h3>
 
-      <div class="form__input-title">
-        <label for="request">Any Request?</label>
+          <li class="sidebar__menu-item">
+            <a href="search.html"> Illustrations </a>
+          </li>
+
+          <li class="sidebar__menu-item"><a href="search.html"> Manga </a></li>
+
+          <li class="sidebar__menu-item"><a href="search.html"> Vector </a></li>
+        </ul>
+        <ul class="sidebar__menu">
+          <h3>Popularity</h3>
+
+          <li class="sidebar__menu-item">
+            <a href="search.html"> Top Search </a>
+          </li>
+
+          <li class="sidebar__menu-item">
+            <a href="search.html"> New Posts </a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a href="profile.html"> Comissions </a>
+          </li>
+        </ul>
       </div>
-      <div class="form__full-width-input">
-        <textarea name="request" id="request" cols="30" rows="10"></textarea>
+      <div class="sidebar__bottom">
+        <p>
+          Copyright 2023 - ArtVril. All artworks and content shared on this
+          social media platform are protected by copyright law. All rights
+          reserved.
+        </p>
       </div>
-      <div id="button-div">
-        <button type="submit" id="button-submit">Submit</button>
+    </div>
+    <main>
+      <div id="form__background">
+        <div class="form__header-title">ArtVril Commission Form</div>
+        <form action="">
+          <div class="form__input-title">
+            <label for="full-name">Full Name</label>
+          </div>
+          <div class="form__full-width-input">
+            <input
+              type="text"
+              name="full-name"
+              id="full-name"
+              placeholder="Full Name"
+            />
+          </div>
+
+          <div class="form__input-title">
+            <label for="email">Email</label>
+          </div>
+          <div class="form__full-width-input">
+            <input type="email" name="email" id="email" />
+          </div>
+
+          <div class="form__input-title">
+            <label for="contact-number">Contact Number</label>
+          </div>
+          <div class="form__full-width-input">
+            <input
+              type="text"
+              name="contact-number"
+              id="contact-number"
+              placeholder="08xx xxxx xxxx"
+            />
+          </div>
+
+          <div class="form__half-width">
+            <div class="form__half-width-column">
+              <div class="form__input-title">
+                <label for="contact-number">This artwork is for</label>
+              </div>
+              <select name="artwork" id="artwork">
+                <option value="Personal">Personal</option>
+                <option value="Business">Business</option>
+                <option value="Gift">Gift</option>
+              </select>
+            </div>
+
+            <div class="form__half-width-column">
+              <div class="form__input-title">
+                <label for="finish-date">I require this work finished by</label>
+              </div>
+              <select name="finish-date" id="finish-date">
+                <option value="Flexible">Flexible</option>
+                <option value="1-4 Weeks">1-4 Weeks</option>
+                <option value="4-8 Weeks">4-8 Weeks</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__input-title">
+            <label for="request">Any Request?</label>
+          </div>
+          <div class="form__full-width-input">
+            <textarea
+              name="request"
+              id="request"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div id="button-div">
+            <button type="submit" id="button-submit">Submit</button>
+          </div>
+        </form>
       </div>
-    </form>
-  </div>
-</main>
-</body>
+    </main>
+    <footer>
+      <section class="footer__bar-1">
+        <div class="footer__bar-1__left">
+          <p>
+            We are actively seeking partners who align with our organization and
+            share our passion for artistic endeavors. If you are interested in
+            collaborating with us, please reach out to us at
+          </p>
+          <p><b>artvril@artvril.com</b></p>
+        </div>
+        <div class="footer__bar-1__right">
+          <p>Contact Us Now</p>
+        </div>
+      </section>
+      <section class="footer__bar-2">
+        <div class="footer__bar-2__left">
+          <img src="../public/img/logo-ArtVril.png" alt="logo" />
+          <p>Email: artvril@artvril.com</p>
+        </div>
+        <div class="footer__bar-2__right">
+          <div class="footer__bar-2__right-text">
+            <p>About Us</p>
+            <p>Programs</p>
+          </div>
+          <div class="footer__bar-2__right-socmed">
+            <img src="../public/img/instagram.png" alt="instagram" />
+            <img src="../public/img/twitter.png" alt="twitter" />
+            <img src="../public/img/behance.png" alt="behance" />
+            <img src="../public/img/dribbble.png" alt="dribbble" />
+          </div>
+        </div>
+      </section>
+      <section class="footer__bar-3">
+        <p>
+          &#169; 2023 ArtVril. Trademarks belong to their respective owners. All
+          rights reserved.
+        </p>
+      </section>
+    </footer>
+    <script src="../script/index.js"></script>
+  </body>
 </html>
