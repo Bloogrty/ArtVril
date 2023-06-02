@@ -1,2 +1,40 @@
 @import "navbar.css";
 @import "footer.css";
+@import "card.css";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-chocolate);
+    width: 90%;
+    margin: auto;
+    padding: 48px;
+    margin-top: 36px;
+    border-radius: 24px;
+}
+
+.wrapper__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper__header-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.wrapper__header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 24px;
+    font-size: 36px;
+}
+
+.wrapper__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+}
