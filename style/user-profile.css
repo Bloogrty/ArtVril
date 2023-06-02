@@ -1,2 +1,43 @@
 @import "navbar.css";
 @import "footer.css";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-chocolate);
+    width: 90%;
+    height: 75vh;
+    margin: auto;
+    padding: 48px;
+    margin-top: 36px;
+    border-radius: 24px;
+    margin-top: 48px;
+}
+
+.wrapper__user {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.wrapper__user-header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 30%;
+    padding: 32px;
+    position: absolute;
+    top: -75px;
+    align-items: center;
+
+}
+
+.wrapper__user-header img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
