@@ -81,3 +81,13 @@ select {
 .error {
     color: red;
 }
+
+.confirmation-text {
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+#check-circle {
+    width: 50vh;
+    height: 50vh;
+}
