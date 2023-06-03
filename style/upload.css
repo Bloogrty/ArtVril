@@ -1,2 +1,13 @@
 @import "navbar.css";
 @import "footer.css";
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: var(--color-blue);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
