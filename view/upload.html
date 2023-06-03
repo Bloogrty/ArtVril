@@ -86,11 +86,25 @@
     </div>
 
     <main>
+      <div id="form__background">
       <div class="form-upload">
-        <div class="form-upload__img">
-          <img id="img" src="choose.png" height="500" alt="" />
-        </div>
+        <form id="myForm" action="form-commission-confirmation.html" onsubmit="return validateForm(event)">
+<!--        <div class="form-upload__img">-->
+<!--          <img id="img" src="choose.png" height="500" alt="" />-->
+<!--        </div>-->
+          <div class="form__input-title">
+            <label for="caption">Caption</label>
+          </div>
+          <div class="form__full-width-input">
+            <input
+                    type="text"
+                    name="caption"
+                    id="caption"
+                    placeholder="Caption"
+            />
         <input id="reference-image" name="reference-image" type="file" accept="image/*"/>
+        </form>
+      </div>
       </div>
     </main>
 

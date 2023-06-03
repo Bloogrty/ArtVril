@@ -1,4 +1,5 @@
 @import "navbar.css";
+@import "form-commission.css";
 @import "footer.css";
 
 input[type=file]::file-selector-button {
@@ -11,3 +12,4 @@ input[type=file]::file-selector-button {
     cursor: pointer;
     transition: background .2s ease-in-out;
 }
+
