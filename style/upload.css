@@ -13,3 +13,8 @@ input[type=file]::file-selector-button {
     transition: background .2s ease-in-out;
 }
 
+.form__full-width-input {
+    display: flex;
+    flex-direction: column;
+}
+
