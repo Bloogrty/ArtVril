@@ -65,7 +65,7 @@ body {
     gap: 16px;
   }
   
-  .commission__profile > img {
+  .commission__profile > a > img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
