@@ -1,6 +1,7 @@
 @import "style.css";
 @import "navbar.css";
 @import "footer.css";
+@import "accordion.css";
 
 .content {
     display: flex;

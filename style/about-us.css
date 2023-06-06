@@ -1,0 +1,16 @@
+@import "style.css";
+@import "navbar.css";
+@import "footer.css";
+@import "accordion.css";
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-chocolate);
+    width: 80%;
+    min-height: 700px;
+    margin: 48px auto;
+    padding: 32px;
+    border-radius: 16px;
+}
