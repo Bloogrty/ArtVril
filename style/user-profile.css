@@ -51,6 +51,11 @@ font-size: 36px;
     padding: 64px;
 }
 
+.aside__image h3 {
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
 .aside__image-upload {
     display: flex;
     flex-direction: row;
