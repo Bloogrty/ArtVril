@@ -32,6 +32,28 @@
     border-radius: 50%;
 }
 
+.profile-user__btn {
+	border: 0;
+	background-color: transparent;
+	padding: 0;
+    width: 100px;
+	height: 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	line-height: 1;
+	transition: 0.15s ease;
+    border-radius: 32px;
+	background-color: var(--color-blue);
+	color: #fff;
+	padding: 12px;
+	&:hover,
+	&:focus {
+	filter: brightness(130%);
+	        }
+}
+
 .profile-user__post {
     display: flex;
     flex-direction: row;
