@@ -10,8 +10,7 @@
     <title>ArtVril</title>
   </head>
   <body>
-  <header class="nav"></header>
-
+    <header class="nav"></header>
 
     <main>
       <div id="form__background">
@@ -23,7 +22,7 @@
             onsubmit="return validateForm(event)"
           >
             <div class="form-upload__img">
-              <img alt="" height="500" id="img" src="choose.png" />
+              <img alt="" id="img" src="../public/img/image.png" />
             </div>
             <div class="form__input-title">
               <label for="art-title">Art Title</label>
@@ -50,12 +49,13 @@
                 type="file"
               />
             </div>
+            <button id="button-submit">Upload</button>
           </form>
         </div>
       </div>
     </main>
 
-  <footer class="footer"></footer>
+    <footer class="footer"></footer>
     <script src="../script/index.js"></script>
     <script src="../script/upload.js"></script>
   </body>
