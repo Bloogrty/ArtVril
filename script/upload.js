@@ -1,5 +1,5 @@
 let img = document.getElementById('img');
-let input = document.getElementById('input');
+let input = document.getElementById('reference-image');
 
 input.onchange = (e) => {
   const file = input.files[0];
