@@ -1,178 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link href="../style/contact-us.css" rel="stylesheet" />
-    <title>ArtVril</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__left">
-        <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
-        <div class="header__logo">
-          <a href="index.html">
-            <img alt="" src="../public/img/logo-ArtVril.png" />
-          </a>
-        </div>
-        <h1>ArtVril</h1>
-      </div>
-      <div class="header__right">
-        <div class="header__search">
-          <input placeholder="Search Images" type="text" />
-          <a href="search.html">Search</a>
-          <!-- <button type="submit">Search</button>  -->
-        </div>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__item-work">
-              <a href="form-upload.html"> Upload Your Work </a>
-            </li>
-            <li class="header__item-envelop">
-              <a href="chat.html">&#9993; </a>
-            </li>
-            <li class="header__item-profile">
-              <a href="user-profile.html">
-                <img alt="user-profile" src="../public/img/avril.jpg" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../style/contact-us.css" rel="stylesheet"/>
+  <script src="../lib/jquery-3.7.0.min.js"></script>
+  <script src="../script/headerFooter.js"></script>
+  <title>ArtVril</title>
+</head>
+<body>
 
-    <div class="sidebar">
-      <div class="sidebar__top">
-        <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
-        <a href="index.html">
-          <img alt="" src="../public/img/logo-ArtVril.png" />
-        </a>
-      </div>
-      <div class="sidebar__menu-list">
-        <ul class="sidebar__menu">
-          <h3>Home</h3>
+<header class="nav"></header>
 
-          <li class="sidebar__menu-item">
-            <a href="search.html"> Illustrations </a>
-          </li>
+<section class="content">
+  <main>
+    <h3>CONTACT US</h3>
+    <div class="main__form">
+      <form action="/submit" method="post">
+        <label for="name">Name:</label><br/>
+        <input id="name" name="name" required type="text"/><br/><br/>
 
-          <li class="sidebar__menu-item"><a href="search.html"> Manga </a></li>
+        <label for="email">Email:</label><br/>
+        <input id="email" name="email" required type="email"/><br/><br/>
 
-          <li class="sidebar__menu-item"><a href="search.html"> Vector </a></li>
-        </ul>
-        <ul class="sidebar__menu">
-          <h3>Popularity</h3>
+        <label for="phone">Phone Number:</label><br/>
+        <input id="phone" name="phone" required type="tel"/><br/><br/>
 
-          <li class="sidebar__menu-item">
-            <a href="search.html"> Top Search </a>
-          </li>
+        <label for="message">Message:</label><br/>
+        <textarea id="message" name="message" required rows="5"></textarea
+        ><br/><br/>
 
-          <li class="sidebar__menu-item">
-            <a href="search.html"> New Posts </a>
-          </li>
-          <li class="sidebar__menu-item">
-            <a href="profile.html"> Comissions </a>
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar__bottom">
-        <p>
-          Copyright 2023 - ArtVril. All artworks and content shared on this
-          social media platform are protected by copyright law. All rights
-          reserved.
-        </p>
-      </div>
+        <input type="submit" value="Submit"/>
+      </form>
     </div>
+  </main>
 
-    <section class="content">
-      <main>
-        <h3>CONTACT US</h3>
-        <div class="main__form">
-          <form action="/submit" method="post">
-            <label for="name">Name:</label><br />
-            <input type="text" id="name" name="name" required /><br /><br />
+  <aside class="contact-info">
+    <h3>Conctact Information</h3>
+    <ul>
+      <li>Phone Number: +62 812 1010 1010</li>
+      <li>
+        Email: <a href="mailto:artvril@artvril.com">artvril@artvril.com</a>
+      </li>
+      <li>
+        Instagram:
+        <a href="https://instagram.com/artvril" target="_blank">@artvril</a>
+      </li>
+      <li>
+        Twitter:
+        <a href="https://twitter.com/artvril_twt" target="_blank"
+        >@artvril_twt</a
+        >
+      </li>
+      <li>
+        Location: Jl. Jalur Sutera, RT.001 / RW.004, Panunggangan, Kec,
+        Pinang, Kota Tanggerang, Banten 15143
+      </li>
+    </ul>
+  </aside>
+</section>
 
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" required /><br /><br />
 
-            <label for="phone">Phone Number:</label><br />
-            <input type="tel" id="phone" name="phone" required /><br /><br />
-
-            <label for="message">Message:</label><br />
-            <textarea id="message" name="message" rows="5" required></textarea
-            ><br /><br />
-
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
-      </main>
-
-      <aside class="contact-info">
-        <h3>Conctact Information</h3>
-        <ul>
-          <li>Phone Number: +62 812 1010 1010</li>
-          <li>
-            Email: <a href="mailto:artvril@artvril.com">artvril@artvril.com</a>
-          </li>
-          <li>
-            Instagram:
-            <a href="https://instagram.com/artvril" target="_blank">@artvril</a>
-          </li>
-          <li>
-            Twitter:
-            <a href="https://twitter.com/artvril_twt" target="_blank"
-              >@artvril_twt</a
-            >
-          </li>
-          <li>
-            Location: Jl. Jalur Sutera, RT.001 / RW.004, Panunggangan, Kec,
-            Pinang, Kota Tanggerang, Banten 15143
-          </li>
-        </ul>
-      </aside>
-    </section>
-
-    <footer>
-      <section class="footer__bar-1">
-        <div class="footer__bar-1__left">
-          <p>
-            We are actively seeking partners who align with our organization and
-            share our passion for artistic endeavors. If you are interested in
-            collaborating with us, please reach out to us at
-          </p>
-          <p><b>artvril@artvril.com</b></p>
-        </div>
-        <div class="footer__bar-1__right">
-          <p>Contact Us Now</p>
-        </div>
-      </section>
-      <section class="footer__bar-2">
-        <div class="footer__bar-2__left">
-          <img alt="logo" src="../public/img/logo-ArtVril.png" />
-          <p>Email: artvril@artvril.com</p>
-        </div>
-        <div class="footer__bar-2__right">
-          <div class="footer__bar-2__right-text">
-            <p>About Us</p>
-            <p>Programs</p>
-          </div>
-          <div class="footer__bar-2__right-socmed">
-            <img alt="instagram" src="../public/img/instagram.png" />
-            <img alt="twitter" src="../public/img/twitter.png" />
-            <img alt="behance" src="../public/img/behance.png" />
-            <img alt="dribbble" src="../public/img/dribbble.png" />
-          </div>
-        </div>
-      </section>
-      <section class="footer__bar-3">
-        <p>
-          &#169; 2023 ArtVril. Trademarks belong to their respective owners. All
-          rights reserved.
-        </p>
-      </section>
-    </footer>
-    <script src="../script/index.js"></script>
-    <script src="../script/upload.js"></script>
-  </body>
+<footer class="footer"></footer>
+<script src="../script/index.js"></script>
+<script src="../script/upload.js"></script>
+</body>
 </html>

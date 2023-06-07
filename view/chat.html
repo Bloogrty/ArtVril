@@ -1,215 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/chat.css" />
-    <title>ArtVril</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__left">
-        <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
-        <div class="header__logo">
-          <a href="index.html">
-            <img src="../public/img/logo-ArtVril.png" alt="" />
-          </a>
-        </div>
-        <h1>ArtVril</h1>
-      </div>
-      <div class="header__right">
-        <div class="header__search">
-          <input type="text" placeholder="Search Images" />
-          <a href="search.html">Search</a>
-          <!-- <button type="submit">Search</button>  -->
-        </div>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__item-work">
-              <a href="form-upload.html"> Upload Your Work </a>
-            </li>
-            <li class="header__item-envelop">
-              <a href="chat.html">&#9993; </a>
-            </li>
-            <li class="header__item-profile">
-              <a href="user-profile.html">
-                <img src="../public/img/avril.jpg" alt="user-profile" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../style/chat.css" rel="stylesheet"/>
+  <script src="../lib/jquery-3.7.0.min.js"></script>
+  <script src="../script/headerFooter.js"></script>
+  <title>ArtVril</title>
+</head>
+<body>
+<header class="nav"></header>
 
-    <div class="sidebar">
-      <div class="sidebar__top">
-        <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
-        <a href="index.html">
-          <img src="../public/img/logo-ArtVril.png" alt="" />
-        </a>
-      </div>
-      <div class="sidebar__menu-list">
-        <ul class="sidebar__menu">
-          <h3>Home</h3>
-
-          <li class="sidebar__menu-item">
-            <a href="search.html"> Illustrations </a>
-          </li>
-
-          <li class="sidebar__menu-item"><a href="search.html"> Manga </a></li>
-
-          <li class="sidebar__menu-item"><a href="search.html"> Vector </a></li>
-        </ul>
-        <ul class="sidebar__menu">
-          <h3>Popularity</h3>
-
-          <li class="sidebar__menu-item">
-            <a href="search.html"> Top Search </a>
-          </li>
-
-          <li class="sidebar__menu-item">
-            <a href="search.html"> New Posts </a>
-          </li>
-          <li class="sidebar__menu-item">
-            <a href="profile.html"> Comissions </a>
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar__bottom">
-        <p>
-          Copyright 2023 - ArtVril. All artworks and content shared on this
-          social media platform are protected by copyright law. All rights
-          reserved.
-        </p>
+<main class="chat">
+  <section class="chat__user">
+    <div class="chat__user-profile active">
+      <img alt="user-profile" src="../public/art/gebi.jpg"/>
+      <div class="chat__user-profile__detail">
+        <h3>Kimvrielle</h3>
+        <p>Makasih yak udah mau nunggu lama banget hehehehe</p>
       </div>
     </div>
+    <div class="chat__user-profile">
+      <img alt="user-profile" src="../public/art/zbvrl.jpg"/>
+      <div class="chat__user-profile__detail">
+        <h3>Zbbvvv</h3>
+        <p>Yahh gitu deh</p>
+      </div>
+    </div>
+  </section>
+  <section class="msger">
+    <header class="msger-header">
+      <div class="msger-header-title">Kimvrielle</div>
+    </header>
 
-    <main class="chat">
-      <section class="chat__user">
-        <div class="chat__user-profile active">
-          <img src="../public/art/gebi.jpg" alt="user-profile" />
-          <div class="chat__user-profile__detail">
-            <h3>Kimvrielle</h3>
-            <p>Makasih yak udah mau nunggu lama banget hehehehe</p>
+    <main class="msger-chat">
+      <div class="msg left-msg">
+        <div
+                class="msg-img"
+                style="background-image: url(../public/art/gebi.jpg)"
+        ></div>
+
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">Kimvrielle</div>
+            <div class="msg-info-time">12:45</div>
+          </div>
+
+          <div class="msg-text">Ini ya!</div>
+        </div>
+      </div>
+
+      <div class="msg right-msg">
+        <div
+                class="msg-img"
+                style="background-image: url(../public/img/avril.jpg)"
+        ></div>
+
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">Zbvvvv</div>
+            <div class="msg-info-time">12:46</div>
+          </div>
+
+          <div class="msg-text">Makasih!</div>
+        </div>
+      </div>
+
+      <div class="msg left-msg">
+        <div
+                class="msg-img"
+                style="background-image: url(../public/art/gebi.jpg)"
+        ></div>
+
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">Kimvrielle</div>
+            <div class="msg-info-time">12:45</div>
+          </div>
+
+          <div class="msg-text">
+            Makasih yak udah mau nunggu lama banget hehehehe
           </div>
         </div>
-        <div class="chat__user-profile">
-          <img src="../public/art/zbvrl.jpg" alt="user-profile" />
-          <div class="chat__user-profile__detail">
-            <h3>Zbbvvv</h3>
-            <p>Yahh gitu deh</p>
-          </div>
-        </div>
-      </section>
-      <section class="msger">
-        <header class="msger-header">
-          <div class="msger-header-title">Kimvrielle</div>
-        </header>
-
-        <main class="msger-chat">
-          <div class="msg left-msg">
-            <div
-              class="msg-img"
-              style="background-image: url(../public/art/gebi.jpg)"
-            ></div>
-
-            <div class="msg-bubble">
-              <div class="msg-info">
-                <div class="msg-info-name">Kimvrielle</div>
-                <div class="msg-info-time">12:45</div>
-              </div>
-
-              <div class="msg-text">Ini ya!</div>
-            </div>
-          </div>
-
-          <div class="msg right-msg">
-            <div
-              class="msg-img"
-              style="background-image: url(../public/img/avril.jpg)"
-            ></div>
-
-            <div class="msg-bubble">
-              <div class="msg-info">
-                <div class="msg-info-name">Zbvvvv</div>
-                <div class="msg-info-time">12:46</div>
-              </div>
-
-              <div class="msg-text">Makasih!</div>
-            </div>
-          </div>
-
-          <div class="msg left-msg">
-            <div
-              class="msg-img"
-              style="background-image: url(../public/art/gebi.jpg)"
-            ></div>
-
-            <div class="msg-bubble">
-              <div class="msg-info">
-                <div class="msg-info-name">Kimvrielle</div>
-                <div class="msg-info-time">12:45</div>
-              </div>
-
-              <div class="msg-text">
-                Makasih yak udah mau nunggu lama banget hehehehe
-              </div>
-            </div>
-          </div>
-        </main>
-
-        <form class="msger-inputarea">
-          <input
-            type="text"
-            class="msger-input"
-            placeholder="Enter your message..."
-          />
-          <button type="submit" class="msger-send-btn">Send</button>
-        </form>
-      </section>
+      </div>
     </main>
 
-    <footer>
-      <section class="footer__bar-1">
-        <div class="footer__bar-1__left">
-          <p>
-            We are actively seeking partners who align with our organization and
-            share our passion for artistic endeavors. If you are interested in
-            collaborating with us, please reach out to us at
-          </p>
-          <p><b>artvril@artvril.com</b></p>
-        </div>
-        <div class="footer__bar-1__right">
-          <p>Contact Us Now</p>
-        </div>
-      </section>
-      <section class="footer__bar-2">
-        <div class="footer__bar-2__left">
-          <img src="../public/img/logo-ArtVril.png" alt="logo" />
-          <p>Email: artvril@artvril.com</p>
-        </div>
-        <div class="footer__bar-2__right">
-          <div class="footer__bar-2__right-text">
-            <p>About Us</p>
-            <p>Programs</p>
-          </div>
-          <div class="footer__bar-2__right-socmed">
-            <img src="../public/img/instagram.png" alt="instagram" />
-            <img src="../public/img/twitter.png" alt="twitter" />
-            <img src="../public/img/behance.png" alt="behance" />
-            <img src="../public/img/dribbble.png" alt="dribbble" />
-          </div>
-        </div>
-      </section>
-      <section class="footer__bar-3">
-        <p>
-          &#169; 2023 ArtVril. Trademarks belong to their respective owners. All
-          rights reserved.
-        </p>
-      </section>
-    </footer>
+    <form class="msger-inputarea">
+      <input
+              class="msger-input"
+              placeholder="Enter your message..."
+              type="text"
+      />
+      <button class="msger-send-btn" type="submit">Send</button>
+    </form>
+  </section>
+</main>
 
-    <script src="../script/index.js"></script>
-  </body>
+<footer class="footer"></footer>
+
+<script src="../script/index.js"></script>
+</body>
 </html>

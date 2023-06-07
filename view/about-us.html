@@ -1,241 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/about-us.css" />
-    <title>ArtVril - Arts</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__left">
-        <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
-        <div class="header__logo">
-          <a href="index.html">
-            <img src="../public/img/logo-ArtVril.png" alt="" />
-          </a>
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../style/about-us.css" rel="stylesheet"/>
+  <script src="../lib/jquery-3.7.0.min.js"></script>
+  <script src="../script/headerFooter.js"></script>
+  <title>ArtVril - Arts</title>
+</head>
+<body>
+<header class="nav"></header>
+
+<main>
+  <div class="main-header">
+    <h1>About Us</h1>
+    <p>
+      ArtVril: Empowering artists to showcase their work, connect, and
+      request commissions in a vibrant online platform. Join us to unleash
+      your creativity and be part of a thriving artistic community.
+    </p>
+  </div>
+
+  <div class="accordion">
+    <h1>find out who our team is!</h1>
+    <div class="accordion">
+      <div class="accordion__item">
+        <input class="accordion__input" id="tab1" type="checkbox"/>
+        <label class="accordion__label" for="tab1"
+        >Cristanto Sidharta</label
+        >
+        <div class="accordion__content">
+          <img
+                  alt="project manager"
+                  class="accordion__img"
+                  src="../public/img/cris.jpg"
+                  width="150"
+          />
+          <p>Halo gengs!</p>
         </div>
-        <h1>ArtVril</h1>
-      </div>
-      <div class="header__right">
-        <div class="header__search">
-          <input type="text" placeholder="Search Images" />
-          <a href="search.html">Search</a>
-          <!-- <button type="submit">Search</button>  -->
-        </div>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__item-work">
-              <a href="form-upload.html"> Upload Your Work </a>
-            </li>
-            <li class="header__item-envelop">
-              <a href="chat.html">&#9993; </a>
-            </li>
-            <li class="header__item-profile">
-              <a href="user-profile.html">
-                <img src="../public/img/avril.jpg" alt="user-profile" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <div class="sidebar">
-      <div class="sidebar__top">
-        <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
-        <a href="index.html">
-          <img src="../public/img/logo-ArtVril.png" alt="" />
-        </a>
-      </div>
-      <div class="sidebar__menu-list">
-        <ul class="sidebar__menu">
-          <h3>Home</h3>
-
-          <li class="sidebar__menu-item">
-            <a href="search.html"> Illustrations </a>
-          </li>
-
-          <li class="sidebar__menu-item"><a href="search.html"> Manga </a></li>
-
-          <li class="sidebar__menu-item"><a href="search.html"> Vector </a></li>
-        </ul>
-        <ul class="sidebar__menu">
-          <h3>Popularity</h3>
-
-          <li class="sidebar__menu-item">
-            <a href="search.html"> Top Search </a>
-          </li>
-
-          <li class="sidebar__menu-item">
-            <a href="search.html"> New Posts </a>
-          </li>
-          <li class="sidebar__menu-item">
-            <a href="profile.html"> Comissions </a>
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar__bottom">
-        <p>
-          Copyright 2023 - ArtVril. All artworks and content shared on this
-          social media platform are protected by copyright law. All rights
-          reserved.
-        </p>
       </div>
     </div>
-
-    <main>
-      <div class="main-header">
-        <h1>About Us</h1>
-        <p>
-          ArtVril: Empowering artists to showcase their work, connect, and
-          request commissions in a vibrant online platform. Join us to unleash
-          your creativity and be part of a thriving artistic community.
-        </p>
-      </div>
-
-      <div class="accordion">
-        <h1>find out who our team is!</h1>
-        <div class="accordion">
-          <div class="accordion__item">
-            <input class="accordion__input" type="checkbox" id="tab1" />
-            <label class="accordion__label" for="tab1"
-              >Cristanto Sidharta</label
-            >
-            <div class="accordion__content">
-              <img
-                class="accordion__img"
-                src="../public/img/cris.jpg"
-                alt="project manager"
-                width="150"
-              />
-              <p>Halo gengs!</p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <div class="accordion__item">
-            <input class="accordion__input" type="checkbox" id="tab2" />
-            <label class="accordion__label" for="tab2">Nathaniel Ezra</label>
-            <div class="accordion__content">
-              <img
-                class="accordion__img"
-                src="../public/img/nathan.jpg"
-                alt="Developer"
-                width="150"
-              />
-              <p>
-                Nathaniel adalah seorang programmer yang sangat menggemari
-                penggunaan Linux sebagai sistem operasi utamanya. Ia menghargai
-                kebebasan, keandalan, dan fleksibilitas yang diberikan oleh
-                Linux dalam pengembangan perangkat lunak.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <div class="accordion__item">
-            <input class="accordion__input" type="checkbox" id="tab3" />
-            <label class="accordion__label" for="tab3">Jason Nathan</label>
-            <div class="accordion__content">
-              <img
-                class="accordion__img"
-                src="../public/img/jason.jpg"
-                alt="Developer"
-                width="150"
-              />
-              <p>
-                Jason adalah seseorang yang sangat menggemari tidur, dan ia
-                menghargai tidur sebagai cara untuk merefresh pikiran dan
-                memulihkan energi yang diperlukannya.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <div class="accordion__item">
-            <input class="accordion__input" type="checkbox" id="tab4" />
-            <label class="accordion__label" for="tab4">Eric Rahmadito</label>
-            <div class="accordion__content">
-              <img
-                class="accordion__img"
-                src="..\public\img\img__eric.jpg"
-                alt="Developer"
-                width="150"
-              />
-              <p>
-                Eric adalah seorang seniman yang kreatif yang menggunakan
-                kecerdasan buatan (AI) untuk menciptakan karya seni unik. Ia
-                menggabungkan imajinasi dan teknologi AI dalam menciptakan
-                komposisi visual yang memukau.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <div class="accordion__item">
-            <input class="accordion__input" type="checkbox" id="tab5" />
-            <label class="accordion__label" for="tab5">Avril Angelin</label>
-            <div class="accordion__content">
-              <img
-                class="accordion__img"
-                src="../public/img/avril.jpg"
-                alt="Developer"
-                width="150"
-              />
-              <p>
-                "Berani Alay bersama Avril! 🌟 Tunjukkan sisi alaymu bersama
-                Avril Angelin yang memukau. Dia adalah ratu gaya alay,
-                mengenakan warna-warna mencolok, aksesori yang mencolok, dan
-                penuh sikap. Siapkan dirimu untuk merangkul gaya alay dan
-                bersinar seperti Avril! 💖
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <section class="footer__bar-1">
-        <div class="footer__bar-1__left">
+    <div class="accordion">
+      <div class="accordion__item">
+        <input class="accordion__input" id="tab2" type="checkbox"/>
+        <label class="accordion__label" for="tab2">Nathaniel Ezra</label>
+        <div class="accordion__content">
+          <img
+                  alt="Developer"
+                  class="accordion__img"
+                  src="../public/img/nathan.jpg"
+                  width="150"
+          />
           <p>
-            We are actively seeking partners who align with our organization and
-            share our passion for artistic endeavors. If you are interested in
-            collaborating with us, please reach out to us at
+            Nathaniel adalah seorang programmer yang sangat menggemari
+            penggunaan Linux sebagai sistem operasi utamanya. Ia menghargai
+            kebebasan, keandalan, dan fleksibilitas yang diberikan oleh
+            Linux dalam pengembangan perangkat lunak.
           </p>
-          <p><b>artvril@artvril.com</b></p>
         </div>
-        <div class="footer__bar-1__right">
-          <p>Contact Us Now</p>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="accordion__item">
+        <input class="accordion__input" id="tab3" type="checkbox"/>
+        <label class="accordion__label" for="tab3">Jason Nathan</label>
+        <div class="accordion__content">
+          <img
+                  alt="Developer"
+                  class="accordion__img"
+                  src="../public/img/jason.jpg"
+                  width="150"
+          />
+          <p>
+            Jason adalah seseorang yang sangat menggemari tidur, dan ia
+            menghargai tidur sebagai cara untuk merefresh pikiran dan
+            memulihkan energi yang diperlukannya.
+          </p>
         </div>
-      </section>
-      <section class="footer__bar-2">
-        <div class="footer__bar-2__left">
-          <img src="../public/img/logo-ArtVril.png" alt="logo" />
-          <p>Email: artvril@artvril.com</p>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="accordion__item">
+        <input class="accordion__input" id="tab4" type="checkbox"/>
+        <label class="accordion__label" for="tab4">Eric Rahmadito</label>
+        <div class="accordion__content">
+          <img
+                  alt="Developer"
+                  class="accordion__img"
+                  src="..\public\img\img__eric.jpg"
+                  width="150"
+          />
+          <p>
+            Eric adalah seorang seniman yang kreatif yang menggunakan
+            kecerdasan buatan (AI) untuk menciptakan karya seni unik. Ia
+            menggabungkan imajinasi dan teknologi AI dalam menciptakan
+            komposisi visual yang memukau.
+          </p>
         </div>
-        <div class="footer__bar-2__right">
-          <div class="footer__bar-2__right-text">
-            <p>About Us</p>
-            <p>Programs</p>
-          </div>
-          <div class="footer__bar-2__right-socmed">
-            <img src="../public/img/instagram.png" alt="instagram" />
-            <img src="../public/img/twitter.png" alt="twitter" />
-            <img src="../public/img/behance.png" alt="behance" />
-            <img src="../public/img/dribbble.png" alt="dribbble" />
-          </div>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="accordion__item">
+        <input class="accordion__input" id="tab5" type="checkbox"/>
+        <label class="accordion__label" for="tab5">Avril Angelin</label>
+        <div class="accordion__content">
+          <img
+                  alt="Developer"
+                  class="accordion__img"
+                  src="../public/img/avril.jpg"
+                  width="150"
+          />
+          <p>
+            "Berani Alay bersama Avril! 🌟 Tunjukkan sisi alaymu bersama
+            Avril Angelin yang memukau. Dia adalah ratu gaya alay,
+            mengenakan warna-warna mencolok, aksesori yang mencolok, dan
+            penuh sikap. Siapkan dirimu untuk merangkul gaya alay dan
+            bersinar seperti Avril! 💖
+          </p>
         </div>
-      </section>
-      <section class="footer__bar-3">
-        <p>
-          &#169; 2023 ArtVril. Trademarks belong to their respective owners. All
-          rights reserved.
-        </p>
-      </section>
-    </footer>
-    <script src="../script/index.js"></script>
-  </body>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer"></footer>
+<script src="../script/index.js"></script>
+</body>
 </html>

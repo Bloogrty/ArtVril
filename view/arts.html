@@ -1,208 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/arts.css" />
-    <title>ArtVril - Arts</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__left">
-        <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
-        <div class="header__logo">
-          <a href="index.html">
-            <img src="../public/img/logo-ArtVril.png" alt="" />
-          </a>
-        </div>
-        <h1>ArtVril</h1>
-      </div>
-      <div class="header__right">
-        <div class="header__search">
-          <input type="text" placeholder="Search Images" />
-          <a href="search.html">Search</a>
-          <!-- <button type="submit">Search</button>  -->
-        </div>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__item-work">
-              <a href="form-upload.html"> Upload Your Work </a>
-            </li>
-            <li class="header__item-envelop">
-              <a href="chat.html">&#9993; </a>
-            </li>
-            <li class="header__item-profile">
-              <a href="user-profile.html">
-                <img src="../public/img/avril.jpg" alt="user-profile" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../style/arts.css" rel="stylesheet"/>
+  <script src="../lib/jquery-3.7.0.min.js"></script>
+  <script src="../script/headerFooter.js"></script>
+  <title>ArtVril - Arts</title>
+</head>
+<body>
+<header class="nav"></header>
 
-    <div class="sidebar">
-      <div class="sidebar__top">
-        <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
-        <a href="index.html">
-          <img src="../public/img/logo-ArtVril.png" alt="" />
+<section class="content-wrap">
+  <main class="artwork">
+    <div class="artwork__img">
+      <img alt="artkwork" src="../public/art/kazuha_fanart.png"/>
+    </div>
+  </main>
+  <aside class="commission">
+    <div class="commission__profile">
+      <a href="profile.html">
+        <img alt="profile-img" src="../public/art/gebi.jpg"/>
+      </a>
+      <h3>kimvrielle</h3>
+    </div>
+    <div class="commission__porto">
+      <div class="commission__porto-text">
+        <h3>Other works</h3>
+        <p>See more</p>
+      </div>
+      <div class="commission__porto-img">
+        <a href="#">
+          <img alt="" src="../public/art/post-1.jpg"/>
+        </a>
+        <a href="#">
+          <img alt="" src="../public/art/post-2.jpg"/>
+        </a>
+        <a href="#">
+          <img alt="" src="../public/art/post-3.webp"/>
         </a>
       </div>
-      <div class="sidebar__menu-list">
-        <ul class="sidebar__menu">
-          <h3>Home</h3>
-
-          <li class="sidebar__menu-item">
-            <a href="search.html"> Illustrations </a>
-          </li>
-
-          <li class="sidebar__menu-item"><a href="search.html"> Manga </a></li>
-
-          <li class="sidebar__menu-item"><a href="search.html"> Vector </a></li>
-        </ul>
-        <ul class="sidebar__menu">
-          <h3>Popularity</h3>
-
-          <li class="sidebar__menu-item">
-            <a href="search.html"> Top Search </a>
-          </li>
-
-          <li class="sidebar__menu-item">
-            <a href="search.html"> New Posts </a>
-          </li>
-          <li class="sidebar__menu-item">
-            <a href="profile.html"> Comissions </a>
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar__bottom">
-        <p>
-          Copyright 2023 - ArtVril. All artworks and content shared on this
-          social media platform are protected by copyright law. All rights
-          reserved.
-        </p>
-      </div>
     </div>
-
-    <section class="content-wrap">
-      <main class="artwork">
-        <div class="artwork__img">
-          <img src="../public/art/kazuha_fanart.png" alt="artkwork" />
-        </div>
-      </main>
-      <aside class="commission">
-        <div class="commission__profile">
-          <a href="profile.html">
-            <img src="../public/art/gebi.jpg" alt="profile-img" />
-          </a>
-          <h3>kimvrielle</h3>
-        </div>
-        <div class="commission__porto">
-          <div class="commission__porto-text">
-            <h3>Other works</h3>
-            <p>See more</p>
-          </div>
-          <div class="commission__porto-img">
-            <a href="#">
-              <img src="../public/art/post-1.jpg" alt="" />
-            </a>
-            <a href="#">
-              <img src="../public/art/post-2.jpg" alt="" />
-            </a>
-            <a href="#">
-              <img src="../public/art/post-3.webp" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="commission__desc">
+    <div class="commission__desc">
           <span
-            >I do illustration and design. I'm currently studying Visual
+          >I do illustration and design. I'm currently studying Visual
             Communication Design in university. On my free time, i like to learn
             the ukulele or paint in my sketchbook!</span
           >
-        </div>
-        <div class="commission__button">
-          <a href="commission.html">Commission Now!</a>
-        </div>
-      </aside>
-    </section>
+    </div>
+    <div class="commission__button">
+      <a href="commission.html">Commission Now!</a>
+    </div>
+  </aside>
+</section>
 
-    <div class="artist-profile">
-      <div class="artwork__profile">
-        <div class="artwork__profile-user">
-          <img src="../public/art/gebi.jpg" alt="user-picture" />
-          <p>@kimvrielle</p>
-          <div class="artwork__profile-user__follow">
-            <p>Follow +</p>
-          </div>
-        </div>
-        <div class="artwork__content">
-          <p>&hearts;</p>
-          <p>...</p>
-        </div>
-      </div>
-      <div class="artwork__detail">
-        <p class="artwork__detail-caption" id="hastag">
-          maple boi 🍁 #kazuha if you like this, you can get this as your phone
-          lockscreen! link on bio ☁️ special thanks to mi pren @cranberrypuree
-          for her help
-        </p>
-        <div class="artwork__detail-rate">
-          <div class="artwork__detail-rate__content">
-            <p>&hearts;</p>
-            <p>7.2k</p>
-          </div>
-          <div class="artwork__detail-rate__content">
-            <p>&#9993;</p>
-            <p>1.2k</p>
-          </div>
-        </div>
-        <div class="artwork__detail-date">
-          <p>August 02, 2021 09:32 AM</p>
-        </div>
+<div class="artist-profile">
+  <div class="artwork__profile">
+    <div class="artwork__profile-user">
+      <img alt="user-picture" src="../public/art/gebi.jpg"/>
+      <p>@kimvrielle</p>
+      <div class="artwork__profile-user__follow">
+        <p>Follow +</p>
       </div>
     </div>
+    <div class="artwork__content">
+      <p>&hearts;</p>
+      <p>...</p>
+    </div>
+  </div>
+  <div class="artwork__detail">
+    <p class="artwork__detail-caption" id="hastag">
+      maple boi 🍁 #kazuha if you like this, you can get this as your phone
+      lockscreen! link on bio ☁️ special thanks to mi pren @cranberrypuree
+      for her help
+    </p>
+    <div class="artwork__detail-rate">
+      <div class="artwork__detail-rate__content">
+        <p>&hearts;</p>
+        <p>7.2k</p>
+      </div>
+      <div class="artwork__detail-rate__content">
+        <p>&#9993;</p>
+        <p>1.2k</p>
+      </div>
+    </div>
+    <div class="artwork__detail-date">
+      <p>August 02, 2021 09:32 AM</p>
+    </div>
+  </div>
+</div>
 
-    <footer>
-      <section class="footer__bar-1">
-        <div class="footer__bar-1__left">
-          <p>
-            We are actively seeking partners who align with our organization and
-            share our passion for artistic endeavors. If you are interested in
-            collaborating with us, please reach out to us at
-          </p>
-          <p><b>artvril@artvril.com</b></p>
-        </div>
-        <div class="footer__bar-1__right">
-          <p>Contact Us Now</p>
-        </div>
-      </section>
-      <section class="footer__bar-2">
-        <div class="footer__bar-2__left">
-          <img src="../public/img/logo-ArtVril.png" alt="logo" />
-          <p>Email: artvril@artvril.com</p>
-        </div>
-        <div class="footer__bar-2__right">
-          <div class="footer__bar-2__right-text">
-            <p>About Us</p>
-            <p>Programs</p>
-          </div>
-          <div class="footer__bar-2__right-socmed">
-            <img src="../public/img/instagram.png" alt="instagram" />
-            <img src="../public/img/twitter.png" alt="twitter" />
-            <img src="../public/img/behance.png" alt="behance" />
-            <img src="../public/img/dribbble.png" alt="dribbble" />
-          </div>
-        </div>
-      </section>
-      <section class="footer__bar-3">
-        <p>
-          &#169; 2023 ArtVril. Trademarks belong to their respective owners. All
-          rights reserved.
-        </p>
-      </section>
-    </footer>
-    <script src="../script/index.js"></script>
-  </body>
+<footer class="footer"></footer>
+<script src="../script/index.js"></script>
+</body>
 </html>

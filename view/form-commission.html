@@ -7,90 +7,18 @@
   <link href="../style/style.css" rel="stylesheet"/>
   <link href="../style/form-commission.css" rel="stylesheet"/>
   <script src="../script/form-commission.js"></script>
+  <script src="../lib/jquery-3.7.0.min.js"></script>
+  <script src="../script/headerFooter.js"></script>
   <title>Commission Form</title>
 </head>
 <body>
-<!--header-->
-<header class="header">
-  <div class="header__left">
-    <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
-    <div class="header__logo">
-      <a href="index.html">
-        <img alt="" src="../public/img/logo-ArtVril.png"/>
-      </a>
-    </div>
-    <h1>ArtVril</h1>
-  </div>
-  <div class="header__right">
-    <div class="header__search">
-      <input placeholder="Search Images" type="text"/>
-      <a href="search.html">Search</a>
-      <!-- <button type="submit">Search</button>  -->
-    </div>
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li class="header__item-work">
-          <a href="form-upload.html"> Upload Your Work </a>
-        </li>
-        <li class="header__item-envelop">
-          <a href="chat.html">&#9993; </a>
-        </li>
-        <li class="header__item-profile">
-          <a href="user-profile.html">
-            <img alt="user-profile" src="../public/img/avril.jpg"/>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
 
-<div class="sidebar">
-  <div class="sidebar__top">
-    <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
-    <a href="index.html">
-      <img alt="" src="../public/img/logo-ArtVril.png"/>
-    </a>
-  </div>
-  <div class="sidebar__menu-list">
-    <ul class="sidebar__menu">
-      <h3>Home</h3>
+<header class="nav"></header>
 
-      <li class="sidebar__menu-item">
-        <a href="search.html"> Illustrations </a>
-      </li>
-
-      <li class="sidebar__menu-item"><a href="search.html"> Manga </a></li>
-
-      <li class="sidebar__menu-item"><a href="search.html"> Vector </a></li>
-    </ul>
-    <ul class="sidebar__menu">
-      <h3>Popularity</h3>
-
-      <li class="sidebar__menu-item">
-        <a href="search.html"> Top Search </a>
-      </li>
-
-      <li class="sidebar__menu-item">
-        <a href="search.html"> New Posts </a>
-      </li>
-      <li class="sidebar__menu-item">
-        <a href="profile.html"> Comissions </a>
-      </li>
-    </ul>
-  </div>
-  <div class="sidebar__bottom">
-    <p>
-      Copyright 2023 - ArtVril. All artworks and content shared on this
-      social media platform are protected by copyright law. All rights
-      reserved.
-    </p>
-  </div>
-</div>
 <main>
   <div id="form__background">
     <div class="form__header-title">ArtVril Commission Form</div>
-    <form action="form-commission-confirmation.html" id="myForm" onsubmit="return validateForm(event)" method="post">
+    <form action="form-commission-confirmation.html" id="myForm" method="post" onsubmit="return validateForm(event)">
       <div class="form__input-title">
         <label for="full-name">Full Name</label>
       </div>
@@ -179,6 +107,8 @@
     </form>
   </div>
 </main>
+
+<footer class="footer"></footer>
 <script src="../script/form-commission.js"></script>
 </body>
 </html>

@@ -1,313 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/index.css" />
-    <title>ArtVril | Search</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__left">
-        <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
-        <div class="header__logo">
-          <a href="index.html">
-            <img src="../public/img/logo-ArtVril.png" alt="" />
-          </a>
-        </div>
-        <h1>ArtVril</h1>
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../style/index.css" rel="stylesheet"/>
+  <script src="../lib/jquery-3.7.0.min.js"></script>
+  <script src="../script/headerFooter.js"></script>
+  <title>ArtVril | Search</title>
+</head>
+<body>
+<header class="nav"></header>
+
+<section class="carousel">
+  <h1>Top Search</h1>
+  <div class="container" style="margin: 40px auto; width: 800px">
+    <div class="slideshow-container" id="scrollable-container">
+      <div class="mySlides fade">
+        <img alt="" src="../public/art/kazuha_fanart.png"/>
+        <div class="text">Kimvrielle</div>
       </div>
-      <div class="header__right">
-        <div class="header__search">
-          <input type="text" placeholder="Search Images" />
-          <a href="search.html">Search</a>
-          <!-- <button type="submit">Search</button>  -->
-        </div>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__item-work">
-              <a href="form-upload.html"> Upload Your Work </a>
-            </li>
-            <li class="header__item-envelop">
-              <a href="chat.html">&#9993; </a>
-            </li>
-            <li class="header__item-profile">
-              <a href="user-profile.html">
-                <img src="../public/img/avril.jpg" alt="user-profile" />
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <div class="mySlides fade">
+        <img alt="image of a cliff" src="../public/img-card/img_cliff.jpg"/>
+        <div class="text">Forest</div>
       </div>
-    </header>
-
-    <div class="sidebar">
-      <div class="sidebar__top">
-        <div class="toggle-btn" onclick="toggleSidebar()">&#9776;</div>
-        <a href="index.html">
-          <img src="../public/img/logo-ArtVril.png" alt="" />
-        </a>
+      <div class="mySlides fade">
+        <img alt="" src="../public/img-card/img_flowers.jpg"/>
+        <div class="text">Flowers</div>
       </div>
-      <div class="sidebar__menu-list">
-        <ul class="sidebar__menu">
-          <h3>Home</h3>
-
-          <li class="sidebar__menu-item">
-            <a href="search.html"> Illustrations </a>
-          </li>
-
-          <li class="sidebar__menu-item"><a href="search.html"> Manga </a></li>
-
-          <li class="sidebar__menu-item"><a href="search.html"> Vector </a></li>
-        </ul>
-        <ul class="sidebar__menu">
-          <h3>Popularity</h3>
-
-          <li class="sidebar__menu-item">
-            <a href="search.html"> Top Search </a>
-          </li>
-
-          <li class="sidebar__menu-item">
-            <a href="search.html"> New Posts </a>
-          </li>
-          <li class="sidebar__menu-item">
-            <a href="profile.html"> Comissions </a>
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar__bottom">
-        <p>
-          Copyright 2023 - ArtVril. All artworks and content shared on this
-          social media platform are protected by copyright law. All rights
-          reserved.
-        </p>
+      <div class="mySlides fade">
+        <img alt="" src="../public/img-card/img_oldgreek.jpg"/>
+        <div class="text">Oldgreek</div>
       </div>
     </div>
 
-    <secteion class="carousel">
-      <h1>Top Search</h1>
-      <div class="container" style="margin: 40px auto; width: 800px">
-        <div class="slideshow-container" id="scrollable-container">
-          <div class="mySlides fade">
-            <img src="../public/art/kazuha_fanart.png" alt="" />
-            <div class="text">Kimvrielle</div>
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+<main class="wrapper">
+  <section class="wrapper__content">
+    <h3>Anime</h3>
+    <div class="cards" id="scrollable-container">
+      <div>
+        <a class="card" href="arts.html">
+          <img
+                  alt=""
+                  class="card__image"
+                  src="../public/art/kazuha_fanart.png"
+          />
+          <div class="card__overlay">
+            <div class="card__header">
+              <img
+                      alt=""
+                      class="card__thumb"
+                      src="../public/art/gebi.jpg"
+              />
+              <div class="card__header-text">
+                <h3 class="card__title">Kimvrielle</h3>
+              </div>
+            </div>
+            <p class="card__description">the city as seen from the sky</p>
           </div>
-          <div class="mySlides fade">
-            <img src="../public/img-card/img_cliff.jpg" />
-            <div class="text">Forest</div>
-          </div>
-          <div class="mySlides fade">
-            <img src="../public/img-card/img_flowers.jpg" alt="" />
-            <div class="text">Flowers</div>
-          </div>
-          <div class="mySlides fade">
-            <img src="../public/img-card/img_oldgreek.jpg" alt="" />
-            <div class="text">Oldgreek</div>
-          </div>
-        </div>
-
-        <div style="text-align: center">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+        </a>
       </div>
-    </secteion>
-    <main class="wrapper">
-      <section class="wrapper__content">
-        <h3>Anime</h3>
-        <div class="cards" id="scrollable-container">
-          <div>
-            <a href="arts.html" class="card">
-              <img
-                src="../public/art/kazuha_fanart.png"
-                class="card__image"
-                alt=""
-              />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <img
-                    class="card__thumb"
-                    src="../public/art/gebi.jpg"
-                    alt=""
-                  />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Kimvrielle</h3>
-                  </div>
-                </div>
-                <p class="card__description">the city as seen from the sky</p>
-              </div>
-            </a>
-          </div>
 
-          <div>
-            <a href="arts.html" class="card">
+      <div>
+        <a class="card" href="arts.html">
+          <img
+                  alt=""
+                  class="card__image"
+                  src="../public/img-card/img__cyberpunkcity.jpg"
+          />
+          <div class="card__overlay">
+            <div class="card__header">
               <img
-                src="../public/img-card/img__cyberpunkcity.jpg"
-                class="card__image"
-                alt=""
+                      alt=""
+                      class="card__thumb"
+                      src="../public/img/javierstoy.jpg"
               />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <img
-                    class="card__thumb"
-                    src="../public/img/javierstoy.jpg"
-                    alt=""
-                  />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Javier</h3>
-                  </div>
-                </div>
-                <p class="card__description">
-                  dystopian future cyberpunk city by Midjourney AI
-                </p>
+              <div class="card__header-text">
+                <h3 class="card__title">Javier</h3>
               </div>
-            </a>
+            </div>
+            <p class="card__description">
+              dystopian future cyberpunk city by Midjourney AI
+            </p>
           </div>
+        </a>
+      </div>
 
-          <div>
-            <a href="arts.html" class="card">
+      <div>
+        <a class="card" href="arts.html">
+          <img
+                  alt=""
+                  class="card__image"
+                  src="../public/img-card/img__elveninterior.jpg"
+          />
+          <div class="card__overlay">
+            <div class="card__header">
               <img
-                src="../public/img-card/img__elveninterior.jpg"
-                class="card__image"
-                alt=""
+                      alt=""
+                      class="card__thumb"
+                      src="../public/img/waduh.jpg"
               />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <img
-                    class="card__thumb"
-                    src="../public/img/waduh.jpg"
-                    alt=""
-                  />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Om Waduh</h3>
-                  </div>
-                </div>
-                <p class="card__description">elven interior AI art</p>
+              <div class="card__header-text">
+                <h3 class="card__title">Om Waduh</h3>
               </div>
-            </a>
+            </div>
+            <p class="card__description">elven interior AI art</p>
           </div>
-        </div>
-      </section>
-      <section class="wrapper__content">
-        <h3>Recent</h3>
-        <div class="cards">
-          <div>
-            <a href="arts.html" class="card">
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper__content">
+    <h3>Recent</h3>
+    <div class="cards">
+      <div>
+        <a class="card" href="arts.html">
+          <img
+                  alt=""
+                  class="card__image"
+                  src="../public/img-card/img_abstract.jpg"
+          />
+          <div class="card__overlay">
+            <div class="card__header">
               <img
-                src="../public/img-card/img_abstract.jpg"
-                class="card__image"
-                alt=""
+                      alt=""
+                      class="card__thumb"
+                      src="../public/img/jason.jpg"
               />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <img
-                    class="card__thumb"
-                    src="../public/img/jason.jpg"
-                    alt=""
-                  />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Hasun</h3>
-                  </div>
-                </div>
-                <p class="card__description">Abstract painting</p>
+              <div class="card__header-text">
+                <h3 class="card__title">Hasun</h3>
               </div>
-            </a>
+            </div>
+            <p class="card__description">Abstract painting</p>
           </div>
+        </a>
+      </div>
 
-          <div>
-            <a href="arts.html" class="card">
+      <div>
+        <a class="card" href="arts.html">
+          <img
+                  alt=""
+                  class="card__image"
+                  src="../public/img-card/img_flowers.jpg"
+          />
+          <div class="card__overlay">
+            <div class="card__header">
               <img
-                src="../public/img-card/img_flowers.jpg"
-                class="card__image"
-                alt=""
+                      alt=""
+                      class="card__thumb"
+                      src="../public/img/parry_hotter.jpg"
               />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <img
-                    class="card__thumb"
-                    src="../public/img/parry_hotter.jpg"
-                    alt=""
-                  />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Parry Hotter</h3>
-                  </div>
-                </div>
-                <p class="card__description">
-                  European style flowers oil painting
-                </p>
+              <div class="card__header-text">
+                <h3 class="card__title">Parry Hotter</h3>
               </div>
-            </a>
+            </div>
+            <p class="card__description">
+              European style flowers oil painting
+            </p>
           </div>
+        </a>
+      </div>
 
-          <div>
-            <a href="arts.html" class="card">
+      <div>
+        <a class="card" href="arts.html">
+          <img
+                  alt=""
+                  class="card__image"
+                  src="../public/img-card/img_oldgreek.jpg"
+          />
+          <div class="card__overlay">
+            <div class="card__header">
               <img
-                src="../public/img-card/img_oldgreek.jpg"
-                class="card__image"
-                alt=""
+                      alt=""
+                      class="card__thumb"
+                      src="../public/img/snape.jpg"
               />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <img
-                    class="card__thumb"
-                    src="../public/img/snape.jpg"
-                    alt=""
-                  />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Professor Snip</h3>
-                  </div>
-                </div>
-                <p class="card__description">Ancient Greek painting</p>
+              <div class="card__header-text">
+                <h3 class="card__title">Professor Snip</h3>
               </div>
-            </a>
+            </div>
+            <p class="card__description">Ancient Greek painting</p>
           </div>
-        </div>
-      </section>
-    </main>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
 
-    <footer>
-      <section class="footer__bar-1">
-        <div class="footer__bar-1__left">
-          <p>
-            We are actively seeking partners who align with our organization and
-            share our passion for artistic endeavors. If you are interested in
-            collaborating with us, please reach out to us at
-          </p>
-          <p><b>artvril@artvril.com</b></p>
-        </div>
-        <div class="footer__bar-1__right">
-          <p>Contact Us Now</p>
-        </div>
-      </section>
-      <section class="footer__bar-2">
-        <div class="footer__bar-2__left">
-          <img src="../public/img/logo-ArtVril.png" alt="logo" />
-          <p>Email: artvril@artvril.com</p>
-        </div>
-        <div class="footer__bar-2__right">
-          <div class="footer__bar-2__right-text">
-            <p>About Us</p>
-            <p>Programs</p>
-          </div>
-          <div class="footer__bar-2__right-socmed">
-            <img src="../public/img/instagram.png" alt="instagram" />
-            <img src="../public/img/twitter.png" alt="twitter" />
-            <img src="../public/img/behance.png" alt="behance" />
-            <img src="../public/img/dribbble.png" alt="dribbble" />
-          </div>
-        </div>
-      </section>
-      <section class="footer__bar-3">
-        <p>
-          &#169; 2023 ArtVril. Trademarks belong to their respective owners. All
-          rights reserved.
-        </p>
-      </section>
-    </footer>
-    <script src="../script/index.js"></script>
-    <script src="../script/carousel.js"></script>
-  </body>
+<footer class="footer"></footer>
+<script src="../script/index.js"></script>
+<script src="../script/carousel.js"></script>
+</body>
 </html>
