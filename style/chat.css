@@ -34,8 +34,14 @@
     overflow: hidden;
     padding: 12px 0;
     border-bottom: 2px solid var(--color-dark-font);
+    background-color: var(--color-chocolate);
     margin-bottom: 12px;
+    cursor: pointer;
+    &:hover{
+      filter: brightness(130%);
+    }
 }
+
 
 .chat__user-profile img {
     width: 50px;
