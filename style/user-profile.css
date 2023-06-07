@@ -1,43 +1,65 @@
 @import "navbar.css";
 @import "footer.css";
 
-.wrapper {
+.content__section {
     display: flex;
-    flex-direction: column;
-    background-color: var(--color-chocolate);
+    flex-direction: row;
     width: 90%;
-    height: 75vh;
-    margin: auto;
+    height:650px;
     padding: 48px;
     margin-top: 36px;
     border-radius: 24px;
     margin-top: 48px;
-}
+    margin-bottom: 96px;
+} 
 
-.wrapper__user {
+.wrapper {
     display: flex;
-    flex-direction: row;
-    position: relative;
+    /* justify-content: center; */
     align-items: center;
-    text-align: center;
+    flex-direction: row;
     gap: 24px;
+    width: 30%;
 }
 
 .wrapper__user-header {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    width: 30%;
+    text-align: center;
+    background-color: var(--color-chocolate);
+    color: var(--color-dark-font);
+    border-radius: 24px;
     padding: 32px;
-    position: absolute;
-    top: -75px;
     align-items: center;
+    gap: 16px;
+
+}
+
+.wrapper__user-header h3{
+font-size: 36px;
 
 }
 
 .wrapper__user-header img {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.aside__image {
+    padding: 64px;
+}
+
+.aside__image-upload {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.aside__image-upload img {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius: 50%;
+    flex-wrap: wrap;
 }
