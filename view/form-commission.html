@@ -1,114 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <link href="../style/style.css" rel="stylesheet"/>
-  <link href="../style/form-commission.css" rel="stylesheet"/>
-  <script src="../script/form-commission.js"></script>
-  <script src="../lib/jquery-3.7.0.min.js"></script>
-  <script src="../script/headerFooter.js"></script>
-  <title>Commission Form</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="../style/style.css" rel="stylesheet" />
+    <link href="../style/form-commission.css" rel="stylesheet" />
+    <script src="../script/form-commission.js"></script>
+    <script src="../lib/jquery-3.7.0.min.js"></script>
+    <script src="../script/headerFooter.js"></script>
+    <title>Commission Form</title>
+  </head>
+  <body>
+    <header class="nav"></header>
 
-<header class="nav"></header>
-
-<main>
-  <div id="form__background">
-    <div class="form__header-title">ArtVril Commission Form</div>
-    <form action="form-commission-confirmation.html" id="myForm" method="post" onsubmit="return validateForm(event)">
-      <div class="form__input-title">
-        <label for="full-name">Full Name</label>
-      </div>
-      <div class="form__full-width-input">
-        <input
-                id="full-name"
-                name="full-name"
-                placeholder="Full Name"
-                type="text"
-        />
-        <br/>
-        <span class="error" id="fullNameError"></span>
-      </div>
-
-      <div class="form__input-title">
-        <label for="email">Email</label>
-      </div>
-      <div class="form__full-width-input">
-        <input
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                type="email"
-        />
-        <br/>
-        <span class="error" id="emailError"></span>
-      </div>
-
-      <div class="form__input-title">
-        <label for="contact-number">Contact Number</label>
-      </div>
-      <div class="form__full-width-input">
-        <input
-                id="contact-number"
-                name="contact-number"
-                placeholder="08xx xxxx xxxx"
-                type="text"
-        />
-        <br/>
-        <span class="error" id="contactNumberError"></span>
-      </div>
-
-      <div class="form__half-width">
-        <div class="form__half-width-column">
+    <main>
+      <div id="form__background">
+        <div class="form__header-title">ArtVril Commission Form</div>
+        <form
+          action="form-commission-confirmation.html"
+          id="myForm"
+          onsubmit="return validateForm(event)"
+        >
           <div class="form__input-title">
-            <label for="contact-number">This artwork is for</label>
+            <label for="full-name">Full Name</label>
           </div>
-          <select id="artwork" name="artwork">
-            <option value="Personal">Personal</option>
-            <option value="Business">Business</option>
-            <option value="Gift">Gift</option>
-          </select>
-          <br/>
-          <span class="error" id="artworkError"></span>
-        </div>
+          <div class="form__full-width-input">
+            <input
+              id="full-name"
+              name="full-name"
+              placeholder="Full Name"
+              type="text"
+            />
+            <br />
+            <span class="error" id="fullNameError"></span>
+          </div>
 
-        <div class="form__half-width-column">
           <div class="form__input-title">
-            <label for="finish-date">I require this work finished by</label>
+            <label for="email">Email</label>
           </div>
-          <select id="finish-date" name="finish-date">
-            <option value="Flexible">Flexible</option>
-            <option value="1-4 Weeks">1-4 Weeks</option>
-            <option value="4-8 Weeks">4-8 Weeks</option>
-          </select>
-          <br/>
-          <span class="error" id="finishDateError"></span>
-        </div>
-      </div>
+          <div class="form__full-width-input">
+            <input
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              type="email"
+            />
+            <br />
+            <span class="error" id="emailError"></span>
+          </div>
 
-      <div class="form__input-title">
-        <label for="request">Any Request?</label>
-      </div>
-      <div class="form__full-width-input">
+          <div class="form__input-title">
+            <label for="contact-number">Contact Number</label>
+          </div>
+          <div class="form__full-width-input">
+            <input
+              id="contact-number"
+              name="contact-number"
+              placeholder="08xx xxxx xxxx"
+              type="text"
+            />
+            <br />
+            <span class="error" id="contactNumberError"></span>
+          </div>
+
+          <div class="form__half-width">
+            <div class="form__half-width-column">
+              <div class="form__input-title">
+                <label for="contact-number">This artwork is for</label>
+              </div>
+              <select id="artwork" name="artwork">
+                <option value="Personal">Personal</option>
+                <option value="Business">Business</option>
+                <option value="Gift">Gift</option>
+              </select>
+              <br />
+              <span class="error" id="artworkError"></span>
+            </div>
+
+            <div class="form__half-width-column">
+              <div class="form__input-title">
+                <label for="finish-date">I require this work finished by</label>
+              </div>
+              <select id="finish-date" name="finish-date">
+                <option value="Flexible">Flexible</option>
+                <option value="1-4 Weeks">1-4 Weeks</option>
+                <option value="4-8 Weeks">4-8 Weeks</option>
+              </select>
+              <br />
+              <span class="error" id="finishDateError"></span>
+            </div>
+          </div>
+
+          <div class="form__input-title">
+            <label for="request">Any Request?</label>
+          </div>
+          <div class="form__full-width-input">
             <textarea
-                    cols="30"
-                    id="request"
-                    name="request"
-                    rows="10"
+              cols="30"
+              id="request"
+              name="request"
+              rows="10"
             ></textarea>
-      </div>
+          </div>
 
-      <div id="button-div">
-        <button id="button-submit" type="submit">Submit</button>
+          <div id="button-div">
+            <button id="button-submit" type="submit">Submit</button>
+          </div>
+        </form>
       </div>
-    </form>
-  </div>
-</main>
+    </main>
 
-<footer class="footer"></footer>
-<script src="../script/form-commission.js"></script>
-</body>
+    <footer class="footer"></footer>
+    <script src="../script/form-commission.js"></script>
+  </body>
 </html>
