@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <link href="../style/contact-us.css" rel="stylesheet"/>
-  <script src="../lib/jquery-3.7.0.min.js"></script>
-  <script src="../script/headerFooter.js"></script>
-  <title>ArtVril</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="../style/contact-us.css" rel="stylesheet" />
+    <script src="../lib/jquery-3.7.0.min.js"></script>
+    <script src="../script/headerFooter.js"></script>
+    <title>ArtVril</title>
+  </head>
+  <body>
+    <header class="nav"></header>
 
-<header class="nav"></header>
+    <section class="content">
+      <main>
+        <h3>CONTACT US</h3>
+        <div class="main__form">
+          <form action="index.html">
+            <label for="name">Name:</label><br />
+            <input id="name" name="name" required type="text" /><br /><br />
 
-<section class="content">
-  <main>
-    <h3>CONTACT US</h3>
-    <div class="main__form">
-      <form action="/submit" method="post">
-        <label for="name">Name:</label><br/>
-        <input id="name" name="name" required type="text"/><br/><br/>
+            <label for="email">Email:</label><br />
+            <input id="email" name="email" required type="email" /><br /><br />
 
-        <label for="email">Email:</label><br/>
-        <input id="email" name="email" required type="email"/><br/><br/>
+            <label for="phone">Phone Number:</label><br />
+            <input id="phone" name="phone" required type="tel" /><br /><br />
 
-        <label for="phone">Phone Number:</label><br/>
-        <input id="phone" name="phone" required type="tel"/><br/><br/>
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" required rows="5"></textarea
+            ><br /><br />
 
-        <label for="message">Message:</label><br/>
-        <textarea id="message" name="message" required rows="5"></textarea
-        ><br/><br/>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </main>
 
-        <input type="submit" value="Submit"/>
-      </form>
-    </div>
-  </main>
+      <aside class="contact-info">
+        <h3>Conctact Information</h3>
+        <ul>
+          <li>Phone Number: +62 812 1010 1010</li>
+          <li>
+            Email: <a href="mailto:artvril@artvril.com">artvril@artvril.com</a>
+          </li>
+          <li>
+            Instagram:
+            <a href="https://instagram.com/artvril" target="_blank">@artvril</a>
+          </li>
+          <li>
+            Twitter:
+            <a href="https://twitter.com/artvril_twt" target="_blank"
+              >@artvril_twt</a
+            >
+          </li>
+          <li>
+            Location: Jl. Jalur Sutera, RT.001 / RW.004, Panunggangan, Kec,
+            Pinang, Kota Tanggerang, Banten 15143
+          </li>
+        </ul>
+      </aside>
+    </section>
 
-  <aside class="contact-info">
-    <h3>Conctact Information</h3>
-    <ul>
-      <li>Phone Number: +62 812 1010 1010</li>
-      <li>
-        Email: <a href="mailto:artvril@artvril.com">artvril@artvril.com</a>
-      </li>
-      <li>
-        Instagram:
-        <a href="https://instagram.com/artvril" target="_blank">@artvril</a>
-      </li>
-      <li>
-        Twitter:
-        <a href="https://twitter.com/artvril_twt" target="_blank"
-        >@artvril_twt</a
-        >
-      </li>
-      <li>
-        Location: Jl. Jalur Sutera, RT.001 / RW.004, Panunggangan, Kec,
-        Pinang, Kota Tanggerang, Banten 15143
-      </li>
-    </ul>
-  </aside>
-</section>
-
-
-<footer class="footer"></footer>
-<script src="../script/index.js"></script>
-<script src="../script/upload.js"></script>
-</body>
+    <footer class="footer"></footer>
+    <script src="../script/index.js"></script>
+    <script src="../script/upload.js"></script>
+  </body>
 </html>
