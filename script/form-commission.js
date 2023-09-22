@@ -46,7 +46,7 @@ function validateForm(event) {
 
 
     if (finishDate === '') {
-      finishDateError.textContent = 'Please select the finish date.';
+         finishDateError.textContent = 'Please select the finish date.';
         return;
     }
     window.location.replace("../view/form-commission-confirmation.html");
